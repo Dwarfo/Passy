@@ -74,5 +74,10 @@ namespace PassProgram.States
             
             return new OutsideMessage(msg.msgId, "No command found");
         }
+
+        public IEnumerable<string> GetNavigableStates()
+        {
+            return navigableStatesSet;
+        }
     }
 }

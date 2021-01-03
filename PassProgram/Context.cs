@@ -12,15 +12,18 @@ namespace PassProgram
         public event SampleEventHandler messageEvent;
         private BaseState currentState;
         private Dictionary<string, BaseState> id2State;
+        public string CurrentStateName {get {return currentState.Id;}}
         public Context()
         {
             Init(this);
             id2State = new Dictionary<string, BaseState>();
             id2State.Add("start", new BaseState("start", new List<ICommand>{
-                new NavigateCommand()
+                new NavigateCommand(),
+                new HelpCommand()
                 }));
             id2State.Add("genPass", new BaseState("genPass", new List<ICommand>{
-                new NavigateCommand()
+                new NavigateCommand(),
+                new HelpCommand()
                 }));
 
             id2State["start"].AddChildState(id2State["genPass"]);
@@ -63,7 +66,11 @@ namespace PassProgram
                 messageEvent?.Invoke(this, new OutsideMessage(command.msgId, "Error occured: " + e.StackTrace + "\n" + e.Message));
             }
             //Console.WriteLine("Response: " + response.msgId + " | " + response.messageText);
-            
+        }
+
+        public IEnumerable<string> GetNavigableStates()
+        {
+            return currentState.GetNavigableStates();
         }
     }
 }
