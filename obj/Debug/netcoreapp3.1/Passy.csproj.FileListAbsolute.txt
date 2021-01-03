@@ -1,0 +1,14 @@
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.csprojAssemblyReference.cache
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.AssemblyInfoInputs.cache
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.AssemblyInfo.cs
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.exe
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.deps.json
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.runtimeconfig.json
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.runtimeconfig.dev.json
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.dll
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Passy.pdb
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.dll
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.pdb
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+C:\Users\hurma\OneDrive\Рабочий стол\Prj\dNet\Passy\obj\Debug\netcoreapp3.1\Passy.csproj.CopyComplete
