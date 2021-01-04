@@ -15,6 +15,7 @@ namespace PassProgram
         public string CurrentStateName {get {return currentState.Id;}}
         public Context()
         {
+            //TODO: Make nav manager
             Init(this);
             id2State = new Dictionary<string, BaseState>();
             id2State.Add("start", new BaseState("start", new List<ICommand>{
@@ -27,6 +28,8 @@ namespace PassProgram
                 }));
 
             id2State["start"].AddChildState(id2State["genPass"]);
+            id2State["genPass"].AddChildState(new BaseState("TestState1", new List<ICommand>()));
+            id2State["genPass"].AddChildState(new BaseState("TestState2", new List<ICommand>()));
 
             currentState = id2State["start"];
         }
@@ -68,9 +71,9 @@ namespace PassProgram
             //Console.WriteLine("Response: " + response.msgId + " | " + response.messageText);
         }
 
-        public IEnumerable<string> GetNavigableStates()
+        public NavInfo GetNavigableStates()
         {
-            return currentState.GetNavigableStates();
+            return new NavInfo(currentState.GetNavigableStates(), currentState.ParentId);
         }
     }
 }

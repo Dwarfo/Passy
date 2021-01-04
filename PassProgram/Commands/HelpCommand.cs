@@ -46,11 +46,12 @@ namespace PassProgram.Commands
             {
                 case "navigation":
                 case "nav":
-                    HashSet<string> navigableStates = (HashSet<string>)Context.Instance.GetNavigableStates();
-                    details = Context.Instance.CurrentStateName + ":";
-                    foreach (string navState in navigableStates)
+                    NavInfo navInfo = Context.Instance.GetNavigableStates();
+                    details = navInfo.Parent == null ? "" : navInfo.Parent + "\n";
+                    details += "|>" + Context.Instance.CurrentStateName + ":";
+                    foreach (string navState in navInfo.Children)
                     {
-                        details += "\n|-" + navState;
+                        details += "\n|--" + navState;
                     }
                     break;
                 default:
